@@ -36,7 +36,8 @@ RM = rm -f
 
 all: $(NAME)
 
-$(NAME): $(OBJ) $(FLAGS) 
+$(NAME):
+		$(CC) $(FLAGS) -c $(SRC)
 		ar rc $(NAME) $(OBJ)
 		ranlib $(NAME)
 
