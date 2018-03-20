@@ -6,9 +6,10 @@
 /*   By: slavor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/05 21:17:37 by slavor            #+#    #+#             */
-/*   Updated: 2018/03/16 16:02:58 by slavor           ###   ########.fr       */
+/*   Updated: 2018/03/19 17:10:51 by slavor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)

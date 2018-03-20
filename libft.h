@@ -6,7 +6,7 @@
 /*   By: slavor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/01 15:27:37 by slavor            #+#    #+#             */
-/*   Updated: 2018/03/19 15:46:58 by slavor           ###   ########.fr       */
+/*   Updated: 2018/03/19 17:12:06 by slavor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char				*ft_strncpy(char *destination, const char *src, size_t len);
 char				*ft_strnew(size_t size);
 char				**ft_strsplit(char const *s, char c);
 char				*ft_strstr(const char *haystack, const char *needle);
-char				*ft_strnstr(const char *hay, const char *needle, size_t len);
+char				*ft_strnstr(const char *hay, const char *nedl, size_t len);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s);
 int					ft_atoi(const char *str);
