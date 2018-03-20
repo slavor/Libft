@@ -1,6 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Makefile                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: slavor <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/03/15 12:47:00 by slavor            #+#    #+#             */
+/*   Updated: 2018/03/19 20:24:38 by slavor           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 NAME = libft.a
 
 FLAGS = -Wall -Wextra -Werror -c -I
+
+CC = gcc
 
 SRC = ft_atoi.c ft_isalpha.c ft_isascii.c ft_isalnum.c ft_isdigit.c ft_isprint.c \
 ft_itoa.c ft_bzero.c ft_len.c ft_lstadd.c ft_lstdel.c ft_lstdelone.c ft_lstiter.c \
@@ -22,7 +36,7 @@ RM = rm -f
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
+$(NAME): $(OBJ) $(FLAGS) 
 		ar rc $(NAME) $(OBJ)
 		ranlib $(NAME)
 
