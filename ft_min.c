@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_listaddend.c                                    :+:      :+:    :+:   */
+/*   ft_min.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: slavor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/03/19 18:01:41 by slavor            #+#    #+#             */
-/*   Updated: 2018/03/19 19:29:53 by slavor           ###   ########.fr       */
+/*   Created: 2018/03/19 19:30:43 by slavor            #+#    #+#             */
+/*   Updated: 2018/03/19 19:30:47 by slavor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_listaddend(t_list **alst, t_list *new)
+int	ft_min(int *arr, int n)
 {
-	t_list *i;
+	int i;
+	int max;
 
-	i = *alst;
-	while (i->next != NULL)
-		i = i->next;
-	i->next = new;
+	max = arr[0];
+	i = 1;
+	while (i < n)
+	{
+		if (arr[i] < max)
+			max = arr[i];
+		i++;
+	}
+	return (max);
 }
