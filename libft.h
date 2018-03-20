@@ -6,7 +6,7 @@
 /*   By: slavor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/01 15:27:37 by slavor            #+#    #+#             */
-/*   Updated: 2018/03/19 17:38:22 by slavor           ###   ########.fr       */
+/*   Updated: 2018/03/19 18:01:26 by slavor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,5 +87,6 @@ int					ft_len(int n);
 void				ft_swap(char *a, char *b);
 char				ft_strrev(char *str);
 size_t				ft_nextch(char *str);
+void				ft_listaddend(t_list **alst, t_list *new);
 
 #endif
